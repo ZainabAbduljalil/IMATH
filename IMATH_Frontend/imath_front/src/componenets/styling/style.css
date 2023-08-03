@@ -1,0 +1,27 @@
+body{
+
+    background-color: rgb(150, 206, 255);
+}
+.Name{
+    display: flex;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 300;
+    justify-content: center;
+    
+}
+
+.admin{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.cont{
+    display: flex;
+    flex-direction: column;
+    /* border-radius: 5%;
+    background-color: rgb(244, 244, 244); */
+    padding: 2%;
+    /* justify-content: space-between;
+    align-content: space-between; */
+}
