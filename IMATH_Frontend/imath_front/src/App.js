@@ -44,6 +44,12 @@ class App extends Component {
             <div key={course.id} className='cont list-group-item list-group-item-action' aria-current="true">
                <h3 className='d-flex w-100 justify-content-between'>{course.courseName}</h3>
                <span className='d-flex w-100 justify-content-between'>Course Fees: {course.price} BHD</span>
+               
+               <h5 hidden >{course.courseProvider}
+               {course.location}
+               {course.duration}
+               </h5>
+
                <div className='d-flex flex-column w-100 justify-content-between'>
                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdropD">Details</button>
                </div>
@@ -97,7 +103,7 @@ class App extends Component {
               </div>
                <div class="modal-body">
                 {<Details/>}
-                <h4>The Detail page should show</h4>
+                <h4> Detail page </h4>
                </div>
            </div>
         </div>

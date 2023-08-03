@@ -17,7 +17,8 @@ class ProviderSerializer(serializers.ModelSerializer):
 class CourseSerializer(serializers.ModelSerializer):
     class Meta:
         model=Course
-        fields=['courseName','price']
+        # fields=['courseName','price',]
+        fields='__all__'
 
 class DetailSerializer(serializers.ModelSerializer):
     class Meta:

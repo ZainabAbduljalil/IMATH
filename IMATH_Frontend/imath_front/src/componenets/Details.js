@@ -3,8 +3,8 @@ import axios from 'axios';
 
 export default function Details() {
   const [imath,setImath]=useState([])
-  const [data,setData]=useState()
-const index = 2
+  // const [data,setData]=useState()
+// const index = 2
   // state = {
   //   imath: []
   // }
@@ -39,10 +39,12 @@ const index = 2
           <div class="card">
              <h5 class="card-header">{course.courseName}</h5>
             <div class="card-body">
-              <h5 class="card-title">Instructor : {course.provider}</h5>
-              <p class="card-text">Course Price: {course.price}<br/>
-                               Course Location :{course.location} <br/>
-                               Duration: {course.duration}</p>
+              <h5 class="card-title">Instructor : {course.courseProvider}</h5>
+              <p class="card-text">
+                Course Price: {course.price}<br/>
+                Course Location :{course.location} <br/>
+                Duration: {course.duration}
+                </p>
             <a href="https://benefit.bh/others/fawri-plus/" class="btn btn-primary">Pay</a>
           </div>
            </div>
